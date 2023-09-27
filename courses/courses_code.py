@@ -20,7 +20,7 @@ while choice != "5":
         liste_course.append(element.lower())
     elif choice == "2":
         element = input("Entrer l'élément que vous voulez retirer: ")
-        if element.lower() in liste_course :
+        if element.lower() in liste_course:
             liste_course.remove(element.lower())
     elif choice == "3":
         for i, element in enumerate(liste_course, 1):
@@ -33,5 +33,5 @@ while choice != "5":
     else:
         print("Choix non disponible !!!")
     with open('./courses/course_data.json', 'w') as f:
-        json.dump(liste_course, f, ensure_ascii = False)
+        json.dump(liste_course, f, ensure_ascii=False)
     print('*' * 25)

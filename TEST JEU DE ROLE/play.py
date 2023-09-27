@@ -14,7 +14,7 @@ ennemi = {
     "attack": [5, 15]
 }
 
-STEP_PASS = False;
+STEP_PASS = False
 
 while player['health'] > 0 and ennemi['health'] > 0:
     # Player Attack

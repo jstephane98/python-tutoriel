@@ -29,7 +29,8 @@ ext_dic = {
 #         out_file.touch()
 
 # Tri files
-tri_dir = Path.home() / "Tri"
+tri_dir = Path.home() / "Downloads"
+tri_dir.mkdir(exist_ok=True)
 files = [f for f in tri_dir.iterdir() if f.is_file()]
 for f in files:
     output_dir = tri_dir / ext_dic.get(f.suffix, "Autres")
